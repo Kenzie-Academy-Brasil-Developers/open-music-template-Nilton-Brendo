@@ -4,17 +4,47 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Open Music</title>
 
-    <!-- CSS -->
     <link rel="stylesheet" href="./src/styles/reset.css" />
-    <link rel="stylesheet" href="./src/styles/globalStyles.css" />
-    <link rel="stylesheet" href="./src/styles/index.css" />
+    <link rel="stylesheet" href="./src/styles/globalStyles.css"/>
+    <link rel="stylesheet" href="./src/styles/buttons.css"/>
+    <link rel="stylesheet" href="./src/pages/styles/index.css">
 
-    <!-- SCRIPTS  -->
+    <script type="module" src="./src/pages/scripts/index.js" defer> </script>
+
+    <title>Open Music</title>
   </head>
   <body>
-    <header></header>
-    <main></main>
+    <header class="header__container">
+      <div>
+        <h1>open music</h1>
+        <button class="button__primary button__theme">
+          <figure>
+            <img src="./src/assets/img/moon.svg" alt="moon">
+          </figure>
+        </button>
+      </div>
+    </header>
+    <main class="main__container">
+      <section class="music-styles__container">
+        <div class="genre__container">
+          <h2>Gênero Musical</h2>
+          <ul class="category__list">
+          </ul>
+        </div>
+        <div class="price__container">
+          <div>
+            <h2>Definir preço</h2>
+            <p>Até R$ 240,00</p>
+          </div>
+          <input id="input__range" type="range" min="0" max="240" step="1" value="90">
+        </div>
+      </section>
+      <section class="albums-found__container">
+        <h2>Albums Encontrados</h2>
+        <ul class="albums__list">
+        </ul>
+      </section>
+    </main>
   </body>
 </html>
